@@ -43,6 +43,4 @@ def decode_t56code(string):
 
 # Converts a 2-byte integer into a proper jis x 0208 code
 def convert_jis208(code):
-    #print(code)
-    #print(code[0] - 0x20, code[1]  - 0x20)
     return '-'.join([str(code[0] - 0x20).zfill(2), str(code[1]  - 0x20).zfill(2)])
